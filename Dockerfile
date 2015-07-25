@@ -15,9 +15,12 @@ RUN apt-get update
 RUN apt-get -qqy --force-yes dist-upgrade
 RUN apt-get install -qqy --force-yes wget default-jre-headless
 
-# download madsonic
-RUN wget http://madsonic.org/download/${PKG_VER}/${PKG_DATE}_${PKG_NAME}-${PKG_VER}.${PKG_BUILD}.deb 
-RUN dpkg -i ${PKG_VER}/${PKG_DATE}_${PKG_NAME}-${PKG_VER}.${PKG_BUILD}.deb
+# todo: 
+# RUN wget http://madsonic.org/download/${PKG_VER}/${PKG_DATE}_${PKG_NAME}-${PKG_VER}.${PKG_BUILD}.deb 
+# RUN dpkg -i ${PKG_VER}/${PKG_DATE}_${PKG_NAME}-${PKG_VER}.${PKG_BUILD}.deb
+
+RUN wget http://madsonic.org/download/6.0/20150725_madsonic-6.0.6890.deb
+RUN dpkg -i 20150725_madsonic-6.0.6890.deb
 
 VOLUME /config /media
 
