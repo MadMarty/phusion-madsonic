@@ -13,14 +13,11 @@ RUN locale-gen en_US en_US.UTF-8
 # force update & install requirements
 RUN apt-get update
 RUN apt-get -qqy --force-yes dist-upgrade
-RUN apt-get install -qqy --force-yes wget default-jre-headless tail
+RUN apt-get install -qqy --force-yes wget default-jre-headless
 
 # install deb package 
 RUN wget http://madsonic.org/download/${PKG_VER}/${PKG_DATE}_${PKG_NAME}-${PKG_VER}.${PKG_BUILD}.deb 
 RUN dpkg -i ${PKG_DATE}_${PKG_NAME}-${PKG_VER}.${PKG_BUILD}.deb
-
-# RUN wget http://madsonic.org/download/6.0/20150827_madsonic-6.0.7120.deb
-# RUN dpkg -i 20150827_madsonic-6.0.7120.deb
 
 VOLUME /config /media
 
