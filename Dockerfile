@@ -3,8 +3,8 @@ MAINTAINER madsonic (support@madsonic.org)
 
 # Package Information
 ENV PKG_VER 6.0
-ENV PKG_BUILD 7820
-ENV PKG_DATE 20151216
+ENV PKG_BUILD 7860
+ENV PKG_DATE 20160109
 ENV PKG_NAME madsonic
 
 # set locale
