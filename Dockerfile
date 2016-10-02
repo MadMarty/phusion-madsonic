@@ -2,9 +2,9 @@ FROM phusion/baseimage:0.9.17
 MAINTAINER madsonic (support@madsonic.org)
 
 # Package Information
-ENV PKG_VER 6.0
-ENV PKG_BUILD 7860
-ENV PKG_DATE 20160109
+ENV PKG_VER 6.1
+ENV PKG_BUILD 8740
+ENV PKG_DATE 20161001
 ENV PKG_NAME madsonic
 
 # set locale
